@@ -1,0 +1,5 @@
+export { default as logo } from './logo.svg'
+export { default as send } from './send.svg'
+export { default as user } from './user.svg'
+export { default as preview } from './preview.png'
+export { default as download } from './download.png'
