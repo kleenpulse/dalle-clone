@@ -9,10 +9,10 @@ function randomLoader() {
 
 	return loader;
 }
-const Loader = () => (
+const Loader = ({ color }) => (
 	<div role="status">
 		<img src={randomLoader()} alt="loading" className="w-32 h-auto" />
-		<p className="w-full text-white font-bold text-center">loading...</p>
+		<p className={`w-full text-${color} font-bold text-center`}>loading...</p>
 	</div>
 );
 
