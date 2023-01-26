@@ -29,3 +29,8 @@
 	background-color: #666e75;
 	border-radius: 5px;
 }
+button:hover,
+#create:hover {
+	scale: 1.1;
+	transition: all 500ms;
+}
