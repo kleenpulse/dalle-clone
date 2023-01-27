@@ -4,7 +4,7 @@ import { downloadImage } from "../utils";
 
 const Card = ({ _id, name, prompt, photo }) => {
 	return (
-		<div className="transition duration-500 ease-in-out rounded-xl group relative shadow-card hover:shadow-cardhover md:hover:scale-110 card">
+		<div className="transition duration-500 ease-in-out rounded-xl group relative sm:shadow-[0_0_20px_#1e1e1e] hover:shadow-[0_0_30px_#1e1e1e] md:hover:scale-110 card">
 			<img
 				src={photo}
 				alt={prompt}

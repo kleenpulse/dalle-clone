@@ -19,10 +19,7 @@
 body {
 	background: #000;
 }
-.some {
-	color: #292929;
-	background: #171717;
-}
+
 .prompt::-webkit-scrollbar {
 	width: 5px;
 }
@@ -73,9 +70,6 @@ input:valid {
 }
 input:focus:invalid {
 	border: 1px solid red;
-}
-.sa {
-	color: #888888;
 }
 
 #generateBtn,
