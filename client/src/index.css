@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+*,
+:root {
 	font-family: "Inter", sans-serif;
+	--input-border: rgba(0, 0, 0, 0.1);
+	--shadow1: rgba(187, 187, 187, 0.218);
+	--shadow2: rgba(0, 0, 0, 0.35);
 }
 
 @media screen and (min-width: 480px) {
@@ -12,7 +16,13 @@
 		grid-row: auto/span 2;
 	}
 }
-
+body {
+	background: #000;
+}
+.some {
+	color: #292929;
+	background: #171717;
+}
 .prompt::-webkit-scrollbar {
 	width: 5px;
 }
@@ -33,4 +43,49 @@ button:hover,
 #create:hover {
 	scale: 1.1;
 	transition: all 500ms;
+}
+button:active,
+#create:active {
+	scale: 0.8;
+	transition: all 300ms;
+}
+
+input {
+	padding: 12px 10px 12px 48px;
+	border: none;
+	outline: none;
+	width: 100%;
+	background: var(--bg);
+	border: 1px solid var(--input-border);
+	font-weight: 500;
+	letter-spacing: 0.2ch;
+	border-radius: 25px;
+	font-size: 1rem;
+	box-shadow: -5px -5px 15px var(--shadow1), 5px 5px 15px var(--shadow2);
+	transition: 0.5s;
+}
+
+::placeholder {
+	opacity: 0.4 !important;
+}
+input:valid {
+	border: 1px solid #06ff65;
+}
+input:focus:invalid {
+	border: 1px solid red;
+}
+.sa {
+	color: #888888;
+}
+
+#generateBtn,
+#shareBtn,
+#create,
+#no-result {
+	width: fit-content;
+	filter: brightness(1.4);
+	background: linear-gradient(90deg, #fdb305, #a602ff, #0ff);
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-background-clip: text;
 }
