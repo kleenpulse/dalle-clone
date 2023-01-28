@@ -5,7 +5,7 @@ import { Home, CreatePost } from "./pages";
 const App = () => {
 	return (
 		<BrowserRouter>
-			<header className="fixed top-0 w-full flex items-center sm:px-8 px-4 py-4 justify-between bg-transparent backdrop-blur-[10px] border-b border-b-gray-400 z-50">
+			<header className="fixed top-0 w-full flex items-center sm:px-8 px-4 sm:py-4 p-2 justify-between bg-transparent backdrop-blur-[10px] border-b border-b-gray-400 z-50">
 				<Link to="/">
 					<img src={logo} alt="logo" className="w-28 object-contain invert" />
 				</Link>
@@ -14,7 +14,7 @@ const App = () => {
 					to="/create-post"
 					className="uppercase font-inter font-bold shadow-[0_0_8px_#888] text-white px-4 py-2 rounded-md"
 				>
-					Create
+					Create Yours
 				</Link>
 			</header>
 			<main className="sm:p-8 px-4 pt-8 w-full bg-black min-h-[calc(100vh-73px)] mt-[4rem] sm:pb-0">
